@@ -37,16 +37,15 @@ request("https://www.sourcewell-mn.gov/cooperative-purchasing/022217-wex", funct
       contract_number: contractInfo,
       vendor: {
         name: otherName,
-        contacts: [{
+        contacts: {
         name: contactName,
         phone: phoneNumber,
         email: phone3
-        }]
+        }
       }
     });
   });
 
   console.log(results[0]);
-  console.log(results[0].vendor);
 });
 
